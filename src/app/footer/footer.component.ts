@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Aluno } from '../aluno';
+import { Aluno } from '../modelos/aluno';
 
 @Component({
   selector: 'app-footer',
@@ -12,15 +12,15 @@ export class FooterComponent implements OnInit {
     name: 'Marco Moreira',
     id: 73415,
     class: 1,
-    course: "Comunicação e Multimédia"
-}
+    course: 'Comunicação e Multimédia'
+  }
 
-simao: Aluno = {
+  simao: Aluno = {
   name: 'Simão Amaral',
   id: 65083,
   class: 1,
-  course: "Comunicação e Multimédia"
-}
+  course: 'Comunicação e Multimédia'
+  }
 
   constructor() { }
 
