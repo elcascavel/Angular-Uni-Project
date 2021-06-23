@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let artista of artistas" class="col-sm" style="margin-top:20px">
+            <div class="card border-dark text-center" style="width: 18rem;">
+                <div class="card-header">
+                    <h5>{{artista.name}}</h5>
+                </div>
+                <img src= {{artista.img}} class="__card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="mb-2">
+                        {{artista.emoji}}
+                    </h6>
+
+                    <button type="button" class="btn btn-info btn-sm mr-1 mb-1">
+                        ℹ️ — Discografia
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
