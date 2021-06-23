@@ -11,13 +11,4 @@ export class MainComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  display = false;
-
-  onPress()
-  {
-    this.display = !this.display;
-  }
-
-
 }

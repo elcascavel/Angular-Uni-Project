@@ -10,6 +10,13 @@ export class CardComponent implements OnInit {
 
   artistas = ARTISTAS;
 
+  conteudoVisivel = false;
+
+  onClick()
+  {
+    this.conteudoVisivel = !this.conteudoVisivel;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

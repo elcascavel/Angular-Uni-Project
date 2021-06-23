@@ -11,9 +11,13 @@
                         {{artista.emoji}}
                     </h6>
 
-                    <button type="button" class="btn btn-info btn-sm mr-1 mb-1">
+                    <button (click)="onClick()" type="button" class="btn btn-info btn-sm mr-1 mb-1">
                         ℹ️ — Discografia
                     </button>
+                    <div *ngIf="this.conteudoVisivel" class="__albumInfo">
+                        <hr>
+                        <p>teste</p>
+                    </div>
                 </div>
             </div>
         </div>
