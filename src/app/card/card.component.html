@@ -1,6 +1,6 @@
 <div id="catalogo" class="container">
     <div class="row">
-        <div *ngFor="let artista of artistas" class="col-sm" style="margin-top:20px">
+        <div *ngFor="let artista of artistas; let i = index" class="col-sm" style="margin-top:20px">
             <div class="card border-dark text-center" style="width: 18rem;">
                 <div class="card-header">
                     <h5>{{artista.name}}</h5>
@@ -11,10 +11,10 @@
                         {{artista.emoji}}
                     </h6>
 
-                    <button (click)="onClick()" type="button" class="btn btn-info btn-sm mr-1 mb-1">
+                    <button (click)="onClick(i)" type="button" class="btn btn-info btn-sm mr-1 mb-1">
                         ℹ️ — Discografia
                     </button>
-                    <div *ngIf="this.conteudoVisivel" class="__albumInfo">
+                    <div *ngIf="this.conteudoVisivelMap[i]" class="__albumInfo">
                         <hr>
                         <p>{{artista.album[0]}}</p>
                         <p>{{artista.album[1]}}</p>

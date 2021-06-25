@@ -1,6 +1,5 @@
 import { Artista } from "./artista";
 
-
 export const ARTISTAS: Artista[] = [
     {name: 'ProfJam', img: '../../assets/img/profjam.jpg', emoji: '🌴', album:['SYSTEM','#FFFFFF','MIXTAKES']},
     {name: 'Baby Keem', img: '../../assets/img/babykeem.jpg', emoji: '🔥', album:['Hearts and Darts','Die for My Bitch','The Sound of Bad Habit']},

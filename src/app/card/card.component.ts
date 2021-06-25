@@ -10,11 +10,11 @@ export class CardComponent implements OnInit {
 
   artistas = ARTISTAS;
 
-  conteudoVisivel = false;
+  conteudoVisivelMap: { [key: number]: boolean} = {};
 
-  onClick()
+  onClick(index: number)
   {
-    this.conteudoVisivel = !this.conteudoVisivel;
+    this.conteudoVisivelMap[index] = !this.conteudoVisivelMap[index];
   }
 
   constructor() { }
