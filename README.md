@@ -1,13 +1,22 @@
 # Angular University Project
 
-Project created during the second semester of the course "Ferramentas e Aplicações Multimédia" taken at Universidade-Trás-os-Montes e Alto Douro. This project paved the way for us to get acquainted with Angular, understanding what a front-end framework is and what it does.
+This project was developed during the second semester of the course "Ferramentas e Aplicações Multimédia" at Universidade-Trás-os-Montes e Alto Douro. The purpose of this project was to introduce us to Angular, a front-end framework, and help us understand its functionalities. This project was developed using **Angular 12.0.5**. It has been updated to **Angular 16.1.0**.
 
-# Getting started
+## Getting Started
 
-Make sure you have the [Angular CLI](https://github.com/angular/angular-cli#installation) installed globally.
+Before getting started, ensure that you have the Angular CLI installed globally. You can find installation instructions [here](https://github.com/angular/angular-cli#installation).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. Alternatively `ng serve --open` will open the page on your default web browser automatically. The app will automatically reload if you change any of the source files.
+To run the project locally, follow these steps:
 
-## Functionality overview
+1. Open a command prompt or terminal.
+2. Run `ng serve` to start a development server.
+3. Open your browser and navigate to `http://localhost:4200/`. Alternatively, you can use `ng serve --open` to automatically open the page in your default web browser.
+4. Any changes you make to the source files will trigger an automatic reload of the application.
 
-This application has little features. Our goal, following guidelines set by our professor, was to use four different components and understanding how they can work together. Apart from that we were asked to use a model in our footer component that retrieved information like our names. We decided to expand on this idea and use this for the card component, feeding it information of the different artists on display directly from our model.
+## Functionality Overview
+
+This application offers limited features as it was developed following the guidelines provided by our professor. The main objective was to create and utilize four different components and explore how they can interact with each other.
+
+Additionally, we implemented a model in the footer component to retrieve information, such as our names. Building on this concept, we extended the functionality to the card component, which displays information about different artists directly from our model.
+
+Feel free to explore the application and familiarize yourself with Angular's component-based architecture.
