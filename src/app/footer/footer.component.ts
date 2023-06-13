@@ -13,14 +13,14 @@ export class FooterComponent implements OnInit {
     id: 73415,
     class: 1,
     course: 'Comunicação e Multimédia'
-  }
+  };
 
   simao: Aluno = {
-  name: 'Simão Amaral',
-  id: 65083,
-  class: 1,
-  course: 'Comunicação e Multimédia'
-  }
+    name: 'Simão Amaral',
+    id: 65083,
+    class: 1,
+    course: 'Comunicação e Multimédia'
+  };
 
   constructor() { }
 

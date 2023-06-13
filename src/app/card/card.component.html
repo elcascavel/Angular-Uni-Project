@@ -1,26 +1,33 @@
 <div id="catalogo" class="container">
-    <div class="row">
-        <div *ngFor="let artista of artistas; let i = index" class="col-sm" style="margin-top:20px">
-            <div class="card border-dark text-center" style="width: 18rem;">
-                <div class="card-header">
-                    <h5>{{artista.name}}</h5>
-                </div>
-                <img src={{artista.img}} class="__card-img-top" alt="...">
-                <div class="card-body">
-                    <h6 class="mb-2">
-                        {{artista.emoji}}
-                    </h6>
-
-                    <button (click)="onClick(i)" type="button" class="btn btn-info btn-sm mr-1 mb-1">
-                        ℹ️ — Discografia
-                    </button>
-                    <div *ngIf="this.conteudoVisivelMap[i]" class="__albumInfo">
-                        <hr>
-                        <p>{{artista.album[0]}}</p>
-                        <p>{{artista.album[1]}}</p>
-                        <p>{{artista.album[2]}}</p>
-                    </div>
-                </div>
-            </div>
+  <div class="row">
+    <div
+      *ngFor="let artista of artistas; let i = index"
+      class="col-sm"
+      style="margin-top: 20px"
+    >
+      <div class="card border-dark text-center" style="width: 18rem">
+        <div class="card-header">
+          <h5>{{ artista.name }}</h5>
         </div>
+        <img [src]="artista.img" class="card__img-top" alt="..." />
+        <div class="card-body">
+          <h6 class="mb-2">
+            {{ artista.emoji }}
+          </h6>
+
+          <button
+            (click)="onClick(i)"
+            type="button"
+            class="btn btn-info btn-sm mr-1 mb-1"
+          >
+            ℹ️ — Discografia
+          </button>
+          <div *ngIf="conteudoVisivelMap[i]" class="__albumInfo">
+            <hr />
+            <p *ngFor="let album of artista.album">{{ album }}</p>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+</div>
