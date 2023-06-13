@@ -107,5 +107,7 @@
       }
     }
   },
-  "defaultProject": "T2FAM"
+  "cli": {
+    "analytics": false
+  }
 }
