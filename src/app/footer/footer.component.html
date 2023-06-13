@@ -1,36 +1,25 @@
-<footer id="footer-start" class=" text-center text-lg-start" style="margin-top:20px">
-  <!-- Grid container -->
+<footer id="footer-start" class="footer-section text-center text-lg-start mt-4">
   <div class="container p-4">
-    <!--Grid row-->
     <div class="row">
-      <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">{{marco.name}}</h5>
-
+        <h5 class="footer-name">{{ marco.name }}</h5>
         <p>
-          Número - {{marco.id}} <br>
-          Turma - {{marco.class}} <br>
-          {{marco.course}}
+          Número - {{ marco.id }} <br />
+          Turma - {{ marco.class }} <br />
+          {{ marco.course }}
         </p>
       </div>
-      <!--Grid column-->
-
-      <!--Grid column-->
       <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
-        <h5 class="text-uppercase">{{simao.name}}</h5>
-
+        <h5 class="footer-name">{{ simao.name }}</h5>
         <p>
-          Número - {{simao.id}} <br>
-          Turma - {{simao.class}} <br>
-          {{simao.course}}
+          Número - {{ simao.id }} <br />
+          Turma - {{ simao.class }} <br />
+          {{ simao.course }}
         </p>
       </div>
-      <!--Grid column-->
     </div>
-    <img src="../../assets/img/logo.png"><br>
-    2020/2021 <br>
-    <b>Ferramentas e Aplicações Multimédia</b>
-    <!--Grid row-->
+    <img src="../../assets/img/logo.png" alt="Logo" class="footer-logo" /><br />
+    <span class="footer-year">2020/2021</span> <br />
+    <b class="footer-course">Ferramentas e Aplicações Multimédia</b>
   </div>
-  <!-- Grid container -->
 </footer>
